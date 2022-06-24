@@ -11,6 +11,10 @@ function Encounter:init()
 
     -- The music used for this encounter
     self.music = "battle"
+    
+    -- The color used for this encounter
+    self.bg_color = {0, 0, 0} -- testing
+    self.color = {0, 0.75, 0} -- testing twice
 
     -- Whether characters have the X-Action option in their spell menu
     self.default_xactions = Game:getConfig("partyActions")
