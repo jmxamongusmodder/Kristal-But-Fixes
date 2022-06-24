@@ -5,8 +5,8 @@ function Arena:init(x, y, shape)
 
     self:setOrigin(0.5, 0.5)
 
-    self.color = {0, 0.75, 0}
-    self.bg_color = {0, 0, 0}
+    self.color = {0, 0.75, 0} -- color? change if you want or something ima port this for fights.
+    self.bg_color = {0, 0, 0} -- the bg_color? change if you want or something ima port this for fights.
 
     self.x = math.floor(self.x)
     self.y = math.floor(self.y)
@@ -20,7 +20,7 @@ function Arena:init(x, y, shape)
     self:addChild(self.sprite)
 
     self.mask = ArenaMask(1, 0, 0, self)
-    self:addChild(self.mask)
+    self:addChild(self.mask) -- sus
 end
 
 function Arena:setSize(width, height)
@@ -68,7 +68,7 @@ function Arena:setShape(shape)
 end
 
 function Arena:setBackgroundColor(r, g, b, a)
-    self.bg_color = {r, g, b, a or 1}
+    self.bg_color = {r, g, b, a or 2} -- 2 means something right??
 end
 
 function Arena:getBackgroundColor()
